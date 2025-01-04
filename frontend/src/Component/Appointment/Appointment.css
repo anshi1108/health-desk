@@ -1,0 +1,96 @@
+/* Main container */
+.appointment-scheduler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f9fafb; /* Light background for modern look */
+    min-height: 100vh;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Title styling */
+  .appointment-scheduler h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333; /* Dark text for better readability */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .appointment-scheduler form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Label styling */
+  .appointment-scheduler label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3436;
+  }
+  
+  /* Input and select styling */
+  .appointment-scheduler input,
+  .appointment-scheduler select {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .appointment-scheduler input:focus,
+  .appointment-scheduler select:focus {
+    border-color: #3498db;
+  }
+  
+  /* Button styling */
+  .appointment-scheduler button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    color: #fff;
+    background-color: #3498db; /* Same color as used for phone */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .appointment-scheduler button:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .appointment-scheduler form {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appointment-scheduler h2 {
+      font-size: 26px;
+    }
+  
+    .appointment-scheduler button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

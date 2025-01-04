@@ -1,0 +1,94 @@
+.medical-records-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.firstpart {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.secondpart {
+    justify-content: center;
+}
+
+.records-content {
+    flex: 1;
+    padding: 50px;
+}
+
+.records-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.records-container-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    /* Distribute the cards evenly */
+}
+
+.record-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    /* Ensures the cards take up 1/3 of the available space, minus the gap */
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.record-card:hover {
+    transform: translateY(-10px);
+}
+
+.record-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.record-content {
+    padding: 15px;
+    flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Ensures content takes available space */
+}
+
+.record-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.record-description {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.record-date {
+    font-size: 12px;
+    color: #95a5a6;
+    display: block;
+    margin-top: 5px;
+}
+
+.record-details {
+    font-size: 14px;
+    color: #2c3e50;
+    margin-top: 10px;
+}

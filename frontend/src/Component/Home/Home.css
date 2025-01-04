@@ -1,0 +1,117 @@
+/* General Styles for Home */
+.home {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel {
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+  height: 700px; /* Increased height */
+  object-fit: cover;
+}
+
+.text-carousel-item {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-carousel-item h2 {
+  color: #007bff;
+}
+
+.text-carousel-item p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.dashboard-cardshome {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  /* margin: auto; */
+  padding: 20px;
+}
+
+.dashboard-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 700px; /* Adjust height as needed */
+  width: 1800px;
+  margin-left: 20px;
+}
+
+.card-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,115 @@
+/* Ensure no body overflow */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+}
+
+/* Box-sizing reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    height: 100px;
+    top: 0;
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+/* Logo styling */
+.header-logo {
+    margin-left: 20px;
+    /* Reduced margin for compact look */
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 40px;
+    /* Slightly smaller logo for minimalism */
+}
+
+.header-logo a {
+    margin-left: 12px;
+    /* Balanced spacing between logo and text */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-logo a:hover {
+    color: #3498db;
+    /* Modern hover effect */
+}
+
+/* Search Bar styling */
+.navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    /* Softer corners for modern feel */
+    padding: 10px 20px;
+    width: 40%;
+    /* Ensure it doesn't exceed the parent width */
+    max-width: 100%;
+    /* Allow resizing within parent */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-search img {
+    height: 20px;
+    /* Icon size tuned to minimalism */
+}
+
+.navbar-search input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+    background-color: transparent;
+    width: 100%;
+}
+
+/* Profile Section styling */
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.navbar-profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e6e6e6;
+}
+
+.profile-name {
+    font-weight: 500;
+    color: #34495e;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}

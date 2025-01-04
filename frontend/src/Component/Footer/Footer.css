@@ -1,0 +1,150 @@
+.footer {
+    background-color: #f9fafc;
+    /* Light background for subtle contrast */
+    color: #34495e;
+    /* Neutral dark color for text */
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 0;
+    z-index: 90;
+    border-top: 1px solid #e6e6e6;
+    /* Lighter border for clean separation */
+}
+
+.footer-bottom {
+    background-color: #4058af;
+    /* Modern blue tone */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-divider {
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centered footer container */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+    text-align: left;
+    /* Left-align text for neatness */
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Added margin for spacing */
+}
+
+.footer-logo-img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-text {
+    font-family: 'Poppins', sans-serif;
+    /* Modern sans-serif font */
+    font-size: 24px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.footer-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    /* Spacing for readability */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: #4058af;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #007bff;
+    /* Light blue hover effect */
+}
+
+.footer-input-group {
+    margin-bottom: 10px;
+}
+
+.footer-input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 30px;
+    /* Rounded input fields for a modern look */
+    margin-bottom: 10px;
+    border: 1px solid #e6e6e6;
+    /* Subtle border */
+    font-size: 14px;
+}
+
+.footer-btn {
+    padding: 12px 20px;
+    background-color: #4058af;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    /* Rounded button for modern appeal */
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #007bff;
+}
+
+.footer-bottom-text {
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-input {
+        width: 80%;
+        /* Adjust input field width on smaller screens */
+    }
+
+    .footer-btn {
+        width: 80%;
+        /* Adjust button width */
+    }
+}
